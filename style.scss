@@ -20,10 +20,6 @@ form {
   align-items: center;
   filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
 }
-input,
-button {
-  outline: none;
-}
 form input,
 form button {
   padding: 0.5rem;
@@ -103,7 +99,6 @@ form button:hover {
 }
 select {
   appearance: none;
-  outline: none;
   border: none;
   color: #26a0da;
   width: 10rem;

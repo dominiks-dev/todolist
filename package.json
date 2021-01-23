@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Todo List with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominiks-dev/todolist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominiks-dev/todolist/issues"
+  },
+  "homepage": "https://github.com/dominiks-dev/todolist#readme",
+  "devDependencies": {
+    "electron": "^11.2.1"
+  }
+}

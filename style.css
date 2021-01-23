@@ -33,11 +33,6 @@ form {
           filter: drop-shadow(1px 1px 3px black);
 }
 
-input,
-button {
-  outline: none;
-}
-
 form input,
 form button {
   padding: 0.5rem;
@@ -149,7 +144,6 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  outline: none;
   border: none;
   color: #26a0da;
   width: 10rem;
