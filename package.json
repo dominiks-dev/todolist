@@ -2,7 +2,7 @@
   "name": "todolist",
   "version": "1.0.0",
   "author": "Dominik S",
-  "description": "Todo List with Electron",
+  "description": "Electron Todo List",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
