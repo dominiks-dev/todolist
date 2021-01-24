@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 header,
@@ -29,8 +29,8 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-filter: drop-shadow(1px 1px 3px black);
-          filter: drop-shadow(1px 1px 3px black);
+  -webkit-filter: drop-shadow(1px 1px 3px #000000);
+          filter: drop-shadow(1px 1px 3px #000000);
 }
 
 form input,
@@ -38,12 +38,12 @@ form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: white;
+  background: #ffffff;
 }
 
 form button {
   color: #26a0da;
-  background: white;
+  background: #ffffff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -51,7 +51,31 @@ form button {
 
 form button:hover {
   background: #26a0da;
-  color: white;
+  color: #ffffff;
+}
+
+.input-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .delete-all {
@@ -84,18 +108,21 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -159,12 +186,13 @@ select {
 
 .select::after {
   content: "\25BC";
+  font-size: 1.5rem;
   position: absolute;
-  background: white;
+  background: #ffffff;
   color: #26a0da;
   top: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -172,5 +200,14 @@ select {
 
 .select:hover::after {
   background: #26a0da;
-  color: white;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
